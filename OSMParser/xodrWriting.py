@@ -91,7 +91,7 @@ def fillNormalRoads(path = 'Test.xodr'):
                 <successor elementType="junction" elementId="{4}"/>
             </link>'''.format(name, sum(lengths), road.xodrID, road.startJunction, road.endJunction)+'''
         <type s="0.0" type="town">
-             <speed max="{0}" unit="mph"/>
+             <speed max="{0}" unit="km/h"/>
         </type>
              <planView>'''.format(maxspeed) + geometry +'''
              </planView>
@@ -174,7 +174,7 @@ def fillJunctionRoads(path = 'Test.xodr'):
             </link>'''.format(name, sum(lengths), road.xodrID, junction, incomingRoad, outgoingRoad,
                              road.contactPointPredecessor, road.contactPointSuccessor)+'''
         <type s="0.0" type="town">
-             <speed max="{0}" unit="mph"/>
+             <speed max="{0}" unit="km/h"/>
         </type>
              <planView>'''.format(maxspeed) + geometry +'''
              </planView>
